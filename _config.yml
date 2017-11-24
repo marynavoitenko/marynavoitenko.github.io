@@ -1,10 +1,10 @@
 # Site settings
-title: 
+title: Back to school
 header-img: img/home-bg.png
 email: maryna.voitenko@gmail.com
 copyright_name: marynavoitenko
 description: > # this means to ignore newlines until "baseurl:"
-  
+  or why did I decide to learn software development
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  marynavoitenko
