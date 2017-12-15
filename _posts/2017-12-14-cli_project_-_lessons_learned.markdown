@@ -18,7 +18,7 @@ I had so much fun (most of the time lol) building it. Had many realizations wher
 1. Read through Requirements and Instructions. Take time reading through all of them. I am definitely guilty of not reading until the end, creating my repository too soon and missing few things. Boo :(
 2. So, you read through and it’s a lot of bullet points, so many tasks to complete. How to keep up?! Write them down. A piece of paper, Google doc, Trello, etc. whatever works best for you. 
 
-![Trello - CLI Project Tasks](//imgur.com/a/uUdYo)
+![](/img/CLI Project - Trello Tasks.png)
 
 Feels good to move tasks to Done, right? 
 
