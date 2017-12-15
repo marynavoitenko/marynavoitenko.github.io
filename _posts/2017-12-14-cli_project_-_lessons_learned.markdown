@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "CLI PROJECT - LESSONS LEARNED"
+title:      "CLI Project - Lessons Learned"
 date:       2017-12-14 06:39:38 +0000
 permalink:  cli_project_-_lessons_learned
 ---
@@ -9,7 +9,7 @@ permalink:  cli_project_-_lessons_learned
 You got to the end of the section! Yay! Pat yourself on the back, you deserve it.
 It’s time to build your first project from scratch...aaaaa….
 
-Feeling super overwhelmed about starting a project from scratch, I thought I needed a fun theme to keep me motivated. Being a huge tennis fan, I chose to scrape http://www.atpworldtour.com/. 
+Feeling super overwhelmed about starting a project from scratch, I thought I needed a fun theme to keep me motivated. Being a huge tennis fan, I chose to scrape [ATP World Tour](http://www.atpworldtour.com/). 
 
 I had so much fun (most of the time lol) building it. Had many realizations where I should have done things differently, so I thought I’d share it with other students (or even with myself when I get to the 2nd portfolio project)
 
