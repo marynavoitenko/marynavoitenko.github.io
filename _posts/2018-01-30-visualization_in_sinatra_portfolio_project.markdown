@@ -8,7 +8,7 @@ permalink:  visualization_in_sinatra_portfolio_project
 
 Aaand here we go again - 2nd Portfolio Project. How exciting and terrifying! But I have to say much less terrifying than the 1st project. Is it only me?
 
-I definitely took my learnings [http://mindthequality.com/cli_project_-lessonslearned] from the 1st project and applied here. Great success!
+I definitely took (my learnings from the CLI project)[http://mindthequality.com/cli_project_-lessonslearned] and applied here. Great success!
 
 **Requirements for the project included:**
 
