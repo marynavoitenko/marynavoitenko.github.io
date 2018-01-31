@@ -49,7 +49,7 @@ Next step in visualizing your project is an Entity Relationship Diagram.
 
 > An [entity–relationship diagram](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model) describes inter-related things of interest in a specific domain of knowledge. An ER model is composed of entity types and specifies relationships that can exist between instances of those entity types.
 
-![](../img/Test Case Library - ER model.png)
+![](../img/Test Case Library - ERD.png)
 
 From there, it was clear how to write down my models, validations, and migrations. 
 
