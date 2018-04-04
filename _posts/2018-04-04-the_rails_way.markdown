@@ -14,7 +14,7 @@ Moving from Sinatra to Rails is pretty much like comparing swimming pool to an o
 
 No doubt the number of requirements for portfolio project grew significantly as well.
 
-Some of the most fun and different from Sinatra are:
+**Some of the most fun requirements were:**
 
 * Log in from any of the known providers: Facebook, Twitter, Google, Github, etc. 
 * Nested resources
@@ -27,11 +27,11 @@ For my Rails project, I went with something that has been on my mind lately. Vin
 
 **Result of my data modeling session:**
 
-* Vinyl <> Artist :: one-to-many
-* Vinyl <> Genre :: many-to-many
-* User <> Vinyl :: one-to-many
-* User <> Cart :: one-to-many
-* Cart <> Vinyl :: many-to-many
+* Vinyl <> Artist :: `one-to-many`
+* Vinyl <> Genre :: `many-to-many`
+* User <> Vinyl :: `one-to-many`
+* User <> Cart :: `one-to-many`
+* Cart <> Vinyl :: `many-to-many`
 
 
 ![](../img/Vinyl Exchange - ER Model.png)
