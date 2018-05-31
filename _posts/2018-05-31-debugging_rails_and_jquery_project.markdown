@@ -29,17 +29,17 @@ I started deduction method in my head: I haven’t touched authentication and us
 
 As soon as I updated selector to a specific class of my form, I was able to successfully log in and record walkthrough. 
 
-`$('.js-new-vinyl-form').submit(function(e) {
-       e.preventDefault();
-       let values = $(this).serialize();
-       $('.alert').hide();
-       $.ajax({
-           type: 'POST',
-           data: values,
-           url: '/vinyls/',
-           dataType: 'json'
-       }).done(function(data) {
-			 ...
+`$('.js-new-vinyl-form').submit(function(e) {`
+       `e.preventDefault();`
+      ` let values = $(this).serialize();`
+       `$('.alert').hide();`
+       `$.ajax({`
+       `    type: 'POST',`
+       `    data: values,`
+       `    url: '/vinyls/',`
+        `   dataType: 'json'`
+      ` }).done(function(data) {`
+	`		 ...`
 `
 
 Great success!
