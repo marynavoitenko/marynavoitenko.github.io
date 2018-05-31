@@ -13,17 +13,19 @@ I’m going to share one of my bug experiences that actually happened this morni
 
 I check my server logs and see: 
 
-`Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)`
+```
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+```
 
 That doesn’t make sense, everything worked perfectly yesterday. I flip the table!!! Ok, just kidding :) I drink some water and take a deep breath. I try again and look at server logs..again.
 
 ![](../img/rails_jquery_project_blogpost_01.png)
 
-Hmmm, that doesn’t look right. ‘Vinyls’... But I shouldn’t be hitting vinyls controller at this point... I open browser console and repeat steps.
+Hmmm, that doesn’t look right. *‘vinyls’*... But I shouldn’t be hitting vinyls controller at this point... I open browser console and repeat steps.
 
 ![](../img/rails_jquery_project_blogpost_03.png)
 
-POST request to "/vinyls". Huh?!
+*POST request to "/vinyls"* Huh?!
 
 I started deduction method in my head: I haven’t touched authentication and users controller, it has to be my js file and all the event handlers that get loaded on page load. … and then I remembered what I did. Duh!!! I’ve added callback a function to a form submit event. But which form?? Every form… 
 
@@ -40,7 +42,7 @@ $('form').submit(function(e) {
        }).done(function(data) {
 ```
 
-I’ve attached it to $(‘form’) … wow… so, basically, my callback function was getting executed on each form submit. Since Sign up / Sign in are my first forms in the app => I was not able to log in / sign up. 
+I’ve attached it to *$(‘form’)* … wow… so, basically, my callback function was getting executed on each form submit. Since Sign up / Sign in are my first forms in the app => I was not able to log in / sign up. 
 
 As soon as I updated selector to a specific class of my form, I was able to successfully log in and record walkthrough. 
 
