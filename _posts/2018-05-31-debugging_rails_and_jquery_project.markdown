@@ -9,7 +9,7 @@ I have to say I couldn’t wait to start learning the ropes of JavaScript. I was
 
 New language => new bugs. I was ready to fasten my belt. Haha.
 
-I’m going to share one of my bug experiences that actually happened this morning, right after I’ve merged last updates into master and was ready to record user walkthrough. I pressed ‘record’ and … I can’t sign up or log in to my app … what happened?!?! I haven’t even touched my authentication while working on jQuery front-end.
+I’m going to share one of my bug experiences that actually happened this morning, right after I’ve merged last updates into master and was ready to record user walkthrough. I pressed ‘record’ button and … I can’t sign up or log in to my app … what happened?!?! I haven’t even touched my authentication while working on jQuery front-end.
 
 I check my server logs and see: 
 
@@ -21,11 +21,11 @@ That doesn’t make sense, everything worked perfectly yesterday. I flip the tab
 
 ![](../img/rails_jquery_project_blogpost_01.png)
 
-Hmmm, that doesn’t look right. *‘vinyls’*... But I shouldn’t be hitting vinyls controller at this point... I open browser console and repeat steps.
+Hmmm, that doesn’t look right. **‘vinyls’**... But I shouldn’t be hitting vinyls controller at this point... I open browser console and repeat steps.
 
 ![](../img/rails_jquery_project_blogpost_03.png)
 
-*POST request to "/vinyls"* Huh?!
+**POST request to "/vinyls"** Huh?!
 
 I started deduction method in my head: I haven’t touched authentication and users controller, it has to be my js file and all the event handlers that get loaded on page load. … and then I remembered what I did. Duh!!! I’ve added callback a function to a form submit event. But which form?? Every form… 
 
@@ -42,7 +42,7 @@ $('form').submit(function(e) {
        }).done(function(data) {
 ```
 
-I’ve attached it to *$(‘form’)* … wow… so, basically, my callback function was getting executed on each form submit. Since Sign up / Sign in are my first forms in the app => I was not able to log in / sign up. 
+I’ve attached it to **$(‘form’)** … wow… so, basically, my callback function was getting executed on each form submit. Since Sign up / Sign in are my first forms in the app => I was not able to log in / sign up. 
 
 As soon as I updated selector to a specific class of my form, I was able to successfully log in and record walkthrough. 
 
