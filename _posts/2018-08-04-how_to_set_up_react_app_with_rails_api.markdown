@@ -29,7 +29,7 @@ cd super-awesome-app
 git init
 ```
 * Create git repo for your app on Github
-* * https://github.com/new
+  * https://github.com/new
 
 * Create README.md, LICENSE.md, CONTRIBUTING.md
 
