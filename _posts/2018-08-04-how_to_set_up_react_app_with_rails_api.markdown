@@ -105,17 +105,13 @@ gem 'foreman', '~> 0.82.0'
 ```
 bundle install
 ```
-* Move client into api folder 
-```
-mv client/* project-name-api/client
-```
 * Create a new file Procfile, which specifies the commands Foreman should use to boot each of our desired processes
 ```
 touch Procfile
 ```
 * Open Procfile and add commands
 ```
-web: cd client && npm start
+web: cd ../client && npm start
 api: bundle exec rails s -p 3001
 ```
 * Boot Foreman (set process.env.PORT for our React app to 3000)
