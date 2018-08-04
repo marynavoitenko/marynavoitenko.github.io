@@ -93,5 +93,36 @@ rails s -p 3001
 npm start
 ```
 
+**Foreman**
 
-Voila! 
+Foreman is a utility for managing multiple processes.
+
+* Add foreman gem into your Gemfile
+```
+gem 'foreman', '~> 0.82.0'
+```
+* Install it with Bundler
+```
+bundle install
+```
+* Move client into api folder 
+```
+mv client/* project-name-api/client
+```
+* Create a new file Procfile, which specifies the commands Foreman should use to boot each of our desired processes
+```
+touch Procfile
+```
+* Open Procfile and add commands
+```
+web: cd client && npm start
+api: bundle exec rails s -p 3001
+```
+* Boot Foreman (set process.env.PORT for our React app to 3000)
+```
+foreman start -p 3000
+```
+
+We can see the app running in our browser at ```localhost:3000``` and our API server is up and listening at ```localhost:3001```
+
+Voila!
