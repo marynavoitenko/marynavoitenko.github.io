@@ -22,7 +22,7 @@ mkdir project-name-app
 ```
 * Change directory into that folder
 ```
-cd super-awesome-app
+cd project-name-app
 ```
 * Initialize new git repo
 ```
