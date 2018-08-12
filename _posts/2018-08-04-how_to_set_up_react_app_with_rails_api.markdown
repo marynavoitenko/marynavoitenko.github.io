@@ -122,3 +122,9 @@ foreman start -p 3000
 We can see the app running in our browser at ```localhost:3000``` and our API server is up and listening at ```localhost:3001```
 
 Voila!
+
+Not so fast... As soon as you try to reach any of your API endpoints from your client app, you will get an error ```Cross-Origin Resource Sharing```. OoOooo! Not to worry, the solution is to set up proxy in your client. So that, client makes request to ```localhost:3000``` and the Webpack development server forwards the request to the provided proxy ```localhost:3001```.
+
+Set up proxy in your ```client/package.json```:
+
+![](../img/rails_api_react_client_proxy.png)
