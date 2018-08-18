@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React / Redux - How to refresh the data after creating a new item"
-date:       2018-08-18 21:57:54 +0000
+date:       2018-08-18 17:57:55 -0400
 permalink:  react_redux_-_how_to_refresh_the_data_after_creating_a_new_item
 ---
 
