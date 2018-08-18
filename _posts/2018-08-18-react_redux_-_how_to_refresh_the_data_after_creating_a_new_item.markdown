@@ -25,7 +25,7 @@ As you know, web requests in JavaScript are *asynchronous*. As soon as we dispat
 
 What does it mean for my application? It means that after submitting a POST request to create a new message, it redirects to Message Board before the new message is created and added to application state. So, by the time Message Board loads, application state doesn’t include the newly created message yet.
 
-What do we do? Component Lifecycle methods to the rescue. ComponentWillReceiveProps()
+What do we do? Component Lifecycle methods to the rescue. ```ComponentWillReceiveProps()```
 This will help to re-render the component when the new props are received.
 
 ```
@@ -36,8 +36,8 @@ componentWillReceiveProps(nextProps) {
 }
 ```
 
-* **fetchMessages()** - action creator to fetch all messages from DB
-* **isPosting** - one of state’s properties. Make it available to component in mapStateToProps()
-* **(this.props.isPosting === true && nextProps.isPosting === false)** - only re-render after creating new message (when message is being created isPosting = true, right after it is created - isPosting = false)
+* ```fetchMessages()``` - action creator to fetch all messages from DB
+* ```isPosting``` - one of state’s properties. Make it available to component in mapStateToProps()
+* ```(this.props.isPosting === true && nextProps.isPosting === false)``` - only re-render after creating new message (when message is being created isPosting = true, right after it is created - isPosting = false)
 
 Now, after a new message is being created, application redirect to Message Board. Then when the message is successfully created, the state of the app is apdated => component re-rendered.
