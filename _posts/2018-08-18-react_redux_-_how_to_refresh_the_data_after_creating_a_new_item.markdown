@@ -36,8 +36,8 @@ componentWillReceiveProps(nextProps) {
 }
 ```
 
-* fetchMessages() - action creator to fetch all messages from DB
-* isPosting - one of state’s properties. Make it available to component in mapStateToProps()
-* (this.props.isPosting === true && nextProps.isPosting === false) - only re-render after creating new message (when message is being created isPosting = true, right after it is created - isPosting = false)
+* **fetchMessages()** - action creator to fetch all messages from DB
+* **isPosting** - one of state’s properties. Make it available to component in mapStateToProps()
+* **(this.props.isPosting === true && nextProps.isPosting === false)** - only re-render after creating new message (when message is being created isPosting = true, right after it is created - isPosting = false)
 
 Now, after a new message is being created, application redirect to Message Board. Then when the message is successfully created, the state of the app is apdated => component re-rendered.
